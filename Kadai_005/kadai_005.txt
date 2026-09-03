@@ -1,0 +1,30 @@
+drwx------@ 8 user  staff  256  9月  3 14:23 ..
+drwxr-xr-x  9 user  staff  288  9月  3 14:23 .git
+user@usernoMacBook-Pro git_challenge % touch hello_world.txt
+user@usernoMacBook-Pro git_challenge % echo 'hello,world!' > hello_world.txt
+user@usernoMacBook-Pro git_challenge % cat hello_world.txt
+hello,world!
+user@usernoMacBook-Pro git_challenge % git add hello_world.txt
+user@usernoMacBook-Pro git_challenge % git commit -m 'hello,world!を追加'
+[main (root-commit) a7d02c9] hello,world!を追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+user@usernoMacBook-Pro git_challenge % echo 'こんにちは、世界!' >> hello_world.txt
+user@usernoMacBook-Pro git_challenge % cat hello_world.txt
+hello,world!
+こんにちは、世界!
+user@usernoMacBook-Pro git_challenge % git add hello_world.txt 
+user@usernoMacBook-Pro git_challenge % git commit -m "日本語訳を追加" 
+[main a2aeb0e] 日本語訳を追加
+ 1 file changed, 1 insertion(+)
+user@usernoMacBook-Pro git_challenge % git status
+On branch main
+nothing to commit, working tree clean
+user@usernoMacBook-Pro git_challenge % git log --oneline
+a2aeb0e (HEAD -> main) 日本語訳を追加
+a7d02c9 hello,world!を追加
+user@usernoMacBook-Pro git_challenge % cd ..     
+user@usernoMacBook-Pro DeskTop % mkdir Kadai_005
+user@usernoMacBook-Pro DeskTop % cd Kadai_005
+user@usernoMacBook-Pro Kadai_005 % touch kadai_005.txt
+user@usernoMacBook-Pro Kadai_005 % 
